@@ -18,7 +18,16 @@ type LoginMes struct {
 }
 
 type LoginMesRes struct {
-	ErrorCode string
+	Blood uint
+	HeroName string
+	Power uint
+	ErrorCode uint
 	ErrorDesc string
+}
+
+type AttackMes struct {
+	FromHeroName string
+	ToHeroName string
+	Power uint
 }
 

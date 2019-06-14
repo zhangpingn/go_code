@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go_code/restudy/netstudy/netstudy03/client/process"
 )
 
 func main() {
@@ -14,10 +15,12 @@ func main() {
 		fmt.Println("请输入")
 		fmt.Scanln(&key)
 		switch key {
-		case "1":
-		case "2":
-		case "3":
-		default:
+			case "1":
+				var up *process.UserProcess = &process.UserProcess{}
+				up.Login()
+			case "2":
+			case "3":
+			default:
 		}
 	}
 }
